@@ -1,0 +1,11 @@
+[Unit]
+Description=My Ops Dashboard Service
+After=network.target
+
+[Service]
+ExecStart=/bin/bash /usr/local/bin/monitor.sh
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
