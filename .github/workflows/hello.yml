@@ -10,7 +10,7 @@ jobs:
   say-hello:
     runs-on: ubuntu-latest #Chạy trên ubuntu mới nhất
 
-  steps:
+    steps:
     #Lấy code của mình về máy ảo này
     - name: Checkout code
       uses: actions/checkout@v4
