@@ -78,3 +78,4 @@ while true; do
         echo "$(date): Dashboard updated - RAM: $MEMORY" >> $LOG_FILE
         sleep 2
 done
+TEST_VAR= "Sai Ròi"
