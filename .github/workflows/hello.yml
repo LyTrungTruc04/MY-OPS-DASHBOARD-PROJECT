@@ -24,3 +24,6 @@ jobs:
   #Kiểm tra xem có file readme không
     - name: Checkfiles
       run: ls -la
+  #Sử dụng lệnh make
+    - name: Test make
+      run: make --version
