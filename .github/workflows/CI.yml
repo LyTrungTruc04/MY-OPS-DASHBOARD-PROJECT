@@ -1,0 +1,18 @@
+name: Code Quality Check
+
+on: [push, pull_request]
+
+jobs:
+  lint-bash:
+    name: Soi lỗi Bash Script
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lấy code về...
+        uses: actions/checkout@v4
+
+      - name: Cài đặt shellCheck
+        run: sudo apt-get install -y shellcheck
+
+      - name: Quét lỗi (scan)
+        run: shellcheck scripts/*.sh
+
