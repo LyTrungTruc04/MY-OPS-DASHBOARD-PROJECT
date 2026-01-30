@@ -44,6 +44,14 @@ Dự án này được xây dựng để giải quyết vấn đề giám sát s
 │   └── dashboard.nginx     # File cấu hình nginx
 └── scripts/
     └── monitor.sh          # Script chính (thu thập dữ liệu)
+
+var
+├── www
+    ├── html
+        ├── data.json
+        ├── index.html
+        ├── css.style
+        ├── script.js
 ```
 ## 📦 Hướng dẫn Cài đặt & Sử dụng
 
@@ -55,6 +63,7 @@ cd MY-OPS-DASHBOARD-PROJECT
 
 ### 1.2. Move dashboard UX
 ```bash
+cd MY-OPS-DASHBOARD-PROJECT/dashboard_UX
 sudo mv . /var/www/html
 ```
 
