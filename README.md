@@ -3,7 +3,8 @@
 > Công cụ giám sát hệ thống Linux tự động (System Monitoring Tool).
 > Dự án Capstone tổng hợp kiến thức Bash Script, Systemd, Nginx và Makefile.
 
-<img width="1512" height="516" alt="Screenshot 2025-12-27 at 22 52 23" src="https://github.com/user-attachments/assets/7088b9c1-85bc-4271-ad60-7131ae209dc3" />
+<img width="1512" height="798" alt="Screenshot 2026-01-30 at 23 43 49" src="https://github.com/user-attachments/assets/1c4d7673-9f0a-49e9-abb7-cfdac1d88901" />
+
 <img width="582" height="168" alt="Screenshot 2025-12-27 at 23 30 23" src="https://github.com/user-attachments/assets/46a4d010-3f66-4b37-a12d-775bec78fa55" />
 
 
@@ -51,6 +52,12 @@ Dự án này được xây dựng để giải quyết vấn đề giám sát s
 git clone https://github.com/LyTrungTruc04/MY-OPS-DASHBOARD-PROJECT.git
 cd MY-OPS-DASHBOARD-PROJECT
 ```
+
+### 1.2. Move dashboard UX
+```bash
+sudo mv . /var/www/html
+```
+
 ### 2. Cài đặt (deploy):
 ```bash
 make setup
