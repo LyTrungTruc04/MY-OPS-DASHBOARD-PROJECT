@@ -1,0 +1,18 @@
+{
+	"time": "23:38:03",
+	"date": "30/01/2026",
+	"ram" : {
+		"used": 909,
+		"total": 3868,
+		"percent": 23
+	},
+	"disk": {
+		"used": 27,
+		"free": 73
+	},
+	"system": {
+		"uptime": "4 weeks, 5 days, 13 hours, 57 minutes",
+		"load": "",
+		"processes": 254
+	}
+}

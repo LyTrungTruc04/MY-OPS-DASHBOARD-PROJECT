@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Linux Dashboard v2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+    <div class="app-container">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <button class="toggle-btn" id="toggleBtn">
+                    <i class="fa-solid fa-bars"></i>
+                    <span class="link-text">DASHBOARD</span>
+                </button>
+                <div class="top-action">
+                    <a href="#" class="btn-dashboard">
+                    </a>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item">
+                    <span class="link-text">Projects</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="link-text">Knowledge</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="link-text">Notes</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="link-text">Agents</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="link-text">Settings</span>
+                </a>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <span class="link-text">v2.0 (BETA)</span>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <button class="mobile-toggle" id="mobileToggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <header>
+                <h1 class="typing-effect">HỆ THỐNG LINUX</h1>
+                <div class="date-display" id="date-text">--/--/----</div>
+            </header>
+
+            <div class="grid-stats">
+                <div class="card">
+                    <div class="card-header">TIẾN TRÌNH (PROCESS)</div>
+                    <div class="card-body">
+                        <div class="stat-row">
+                            <span>Tổng</span>
+                            <span class="value accent" id="proc-count">0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">BỘ NHỚ (RAM)</div>
+                    <div class="card-body">
+                        <div class="stat-row">
+                            <span>Đã dùng</span>
+                            <span class="value" id="ram-text">0 / 0 MB</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="ram-bar" style="width: 0%"></div>
+                        </div>
+                        <div class="stat-note">Mức sử dụng bộ nhớ: <span id="ram-percent">0</span>%</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">HOẠT ĐỘNG (UPTIME)</div>
+                    <div class="card-body">
+                        <div class="uptime-box" id="uptime-text">...</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-charts">
+                <div class="card big-card">
+                    <div class="card-header">DUNG LƯỢNG (DISK)</div>
+                    <div class="chart-container">
+                        <canvas id="diskChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid-actions">
+                <div class="action-btn">
+                    <h3>KHÔNG GIAN MỚI</h3>
+                    <p>Khởi tạo mục không gian làm việc mới</p>
+                </div>
+                <div class="action-btn">
+                    <h3>GHI CHÚ</h3>
+                    <p>Truy cập nhanh bảng nháp</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
